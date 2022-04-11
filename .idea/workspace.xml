@@ -4,18 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f573a259-4509-4470-a2b9-f4c021918341" name="Changes" comment="Created spring-boot-microservices application">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/src/main/java/sk/balaz/customer/CustomerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/src/main/resources/banner.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/target/classes/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/target/classes/banner.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="f573a259-4509-4470-a2b9-f4c021918341" name="Changes" comment="Created first microservice customer">
+      <change afterPath="$PROJECT_DIR$/customer/src/main/java/sk/balaz/customer/Customer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +42,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -99,7 +94,7 @@
       <option name="presentableId" value="Default" />
       <updated>1649663784603</updated>
       <workItem from="1649663785771" duration="138000" />
-      <workItem from="1649663944344" duration="4315000" />
+      <workItem from="1649663944344" duration="6183000" />
     </task>
     <task id="LOCAL-00001" summary="Created spring-boot-microservices application">
       <created>1649667694799</created>
@@ -108,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649667694799</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Created first microservice customer">
+      <created>1649669814864</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1649669814864</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,6 +129,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created spring-boot-microservices application" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created spring-boot-microservices application" />
+    <MESSAGE value="Created first microservice customer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created first microservice customer" />
   </component>
 </project>
