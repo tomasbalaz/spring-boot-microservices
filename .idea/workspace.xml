@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f573a259-4509-4470-a2b9-f4c021918341" name="Changes" comment="Created first microservice customer">
-      <change afterPath="$PROJECT_DIR$/customer/src/main/java/sk/balaz/customer/Customer.java" afterDir="false" />
+    <list default="true" id="f573a259-4509-4470-a2b9-f4c021918341" name="Changes" comment="Added Customer class and annotated it with Lombook annotations @Data,@Builder">
+      <change afterPath="$PROJECT_DIR$/customer/src/main/java/sk/balaz/customer/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/src/main/java/sk/balaz/customer/CustomerRegistrationRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,6 +18,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Record" />
       </list>
     </option>
   </component>
@@ -61,6 +63,9 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="sk.balaz.customer" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Workspaces\Experiments\spring-boot-microservices" />
     </key>
@@ -94,7 +99,7 @@
       <option name="presentableId" value="Default" />
       <updated>1649663784603</updated>
       <workItem from="1649663785771" duration="138000" />
-      <workItem from="1649663944344" duration="6183000" />
+      <workItem from="1649663944344" duration="7131000" />
     </task>
     <task id="LOCAL-00001" summary="Created spring-boot-microservices application">
       <created>1649667694799</created>
@@ -110,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649669814864</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added Customer class and annotated it with Lombook annotations @Data,@Builder">
+      <created>1649675095309</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1649675095309</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,6 +142,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created spring-boot-microservices application" />
     <MESSAGE value="Created first microservice customer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created first microservice customer" />
+    <MESSAGE value="Added Customer class and annotated it with Lombook annotations @Data,@Builder" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Customer class and annotated it with Lombook annotations @Data,@Builder" />
   </component>
 </project>
