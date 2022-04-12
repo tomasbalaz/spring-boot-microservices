@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f573a259-4509-4470-a2b9-f4c021918341" name="Changes" comment="Updated application.yml with connection to Database for fraud microservice">
-      <change afterPath="$PROJECT_DIR$/fraud/src/main/java/sk/balaz/fraud/FraudCheckHistory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="f573a259-4509-4470-a2b9-f4c021918341" name="Changes" comment="Created FraudCheckHistory JPA Entity">
+      <change afterPath="$PROJECT_DIR$/fraud/src/main/java/sk/balaz/fraud/FraudCheckHistoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fraud/src/main/java/sk/balaz/fraud/FraudCheckService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/sk/balaz/customer/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/sk/balaz/customer/CustomerRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +138,7 @@
       <option name="presentableId" value="Default" />
       <updated>1649663784603</updated>
       <workItem from="1649663785771" duration="138000" />
-      <workItem from="1649663944344" duration="20184000" />
+      <workItem from="1649663944344" duration="20583000" />
     </task>
     <task id="LOCAL-00001" summary="Created spring-boot-microservices application">
       <created>1649667694799</created>
@@ -223,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649761431457</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Created FraudCheckHistory JPA Entity">
+      <created>1649762043822</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1649762043822</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,6 +260,7 @@
     <MESSAGE value="Created CustomerRepository class and saved customer in Database" />
     <MESSAGE value="Created microservice fraud" />
     <MESSAGE value="Updated application.yml with connection to Database for fraud microservice" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated application.yml with connection to Database for fraud microservice" />
+    <MESSAGE value="Created FraudCheckHistory JPA Entity" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created FraudCheckHistory JPA Entity" />
   </component>
 </project>
