@@ -3,7 +3,7 @@ package sk.balaz.customer;
 import org.springframework.stereotype.Service;
 
 @Service
-public record CustomerService() {
+public record CustomerService(CustomerRepository customerRepository) {
 
     public void registerCustomer(CustomerRegistrationRequest request) {
         Customer customer = Customer.builder()
@@ -14,7 +14,8 @@ public record CustomerService() {
 
         // TODO: check if email valid
         // TODO: check if email not taken
-        // TODO: store customer in db
+
+        customerRepository.save(customer);
 
     }
 }
