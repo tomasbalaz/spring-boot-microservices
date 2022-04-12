@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f573a259-4509-4470-a2b9-f4c021918341" name="Changes" comment="Created FraudCheckHistory JPA Entity">
-      <change afterPath="$PROJECT_DIR$/fraud/src/main/java/sk/balaz/fraud/FraudCheckHistoryRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fraud/src/main/java/sk/balaz/fraud/FraudCheckService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/java/sk/balaz/customer/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/sk/balaz/customer/CustomerRepository.java" afterDir="false" />
+    <list default="true" id="f573a259-4509-4470-a2b9-f4c021918341" name="Changes" comment="Created FraudCheckHistoryRepository, FraudCheckService">
+      <change afterPath="$PROJECT_DIR$/fraud/src/main/java/sk/balaz/fraud/FraudCheckController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fraud/src/main/java/sk/balaz/fraud/FraudCheckResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,9 +17,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Record" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Record" />
       </list>
     </option>
   </component>
@@ -82,6 +82,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="sk.balaz.fraud" />
       <recent name="sk.balaz.customer" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -138,7 +139,7 @@
       <option name="presentableId" value="Default" />
       <updated>1649663784603</updated>
       <workItem from="1649663785771" duration="138000" />
-      <workItem from="1649663944344" duration="20583000" />
+      <workItem from="1649663944344" duration="21209000" />
     </task>
     <task id="LOCAL-00001" summary="Created spring-boot-microservices application">
       <created>1649667694799</created>
@@ -231,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649762043822</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Created FraudCheckHistoryRepository, FraudCheckService">
+      <created>1649762556168</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1649762556168</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,6 +269,7 @@
     <MESSAGE value="Created microservice fraud" />
     <MESSAGE value="Updated application.yml with connection to Database for fraud microservice" />
     <MESSAGE value="Created FraudCheckHistory JPA Entity" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created FraudCheckHistory JPA Entity" />
+    <MESSAGE value="Created FraudCheckHistoryRepository, FraudCheckService" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created FraudCheckHistoryRepository, FraudCheckService" />
   </component>
 </project>
