@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f573a259-4509-4470-a2b9-f4c021918341" name="Changes" comment="Created FraudCheckHistoryRepository, FraudCheckService">
-      <change afterPath="$PROJECT_DIR$/fraud/src/main/java/sk/balaz/fraud/FraudCheckController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fraud/src/main/java/sk/balaz/fraud/FraudCheckResponse.java" afterDir="false" />
+    <list default="true" id="f573a259-4509-4470-a2b9-f4c021918341" name="Changes" comment="Refactored CustomerController, CustomerService from record to class">
+      <change afterPath="$PROJECT_DIR$/customer/src/main/java/sk/balaz/customer/CustomerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/src/main/java/sk/balaz/customer/FraudCheckResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/sk/balaz/customer/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/sk/balaz/customer/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fraud/src/main/java/sk/balaz/fraud/FraudCheckController.java" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/src/main/java/sk/balaz/fraud/FraudCheckController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +71,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="openjdk-17" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Openet/bt-ee-consumer-chf" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../microservices" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -125,8 +127,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.FraudApplication" />
         <item itemvalue="Spring Boot.CustomerApplication" />
+        <item itemvalue="Spring Boot.FraudApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -139,7 +141,8 @@
       <option name="presentableId" value="Default" />
       <updated>1649663784603</updated>
       <workItem from="1649663785771" duration="138000" />
-      <workItem from="1649663944344" duration="21209000" />
+      <workItem from="1649663944344" duration="22222000" />
+      <workItem from="1649765324234" duration="4244000" />
     </task>
     <task id="LOCAL-00001" summary="Created spring-boot-microservices application">
       <created>1649667694799</created>
@@ -239,7 +242,21 @@
       <option name="project" value="LOCAL" />
       <updated>1649762556168</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Created FraudCheckController and expose REST endpoint /api/v1/fraud-check/{customerId}">
+      <created>1649763200181</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1649763200182</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Refactored CustomerController, CustomerService from record to class">
+      <created>1649763369081</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1649763369081</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,6 +287,8 @@
     <MESSAGE value="Updated application.yml with connection to Database for fraud microservice" />
     <MESSAGE value="Created FraudCheckHistory JPA Entity" />
     <MESSAGE value="Created FraudCheckHistoryRepository, FraudCheckService" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created FraudCheckHistoryRepository, FraudCheckService" />
+    <MESSAGE value="Created FraudCheckController and expose REST endpoint /api/v1/fraud-check/{customerId}" />
+    <MESSAGE value="Refactored CustomerController, CustomerService from record to class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactored CustomerController, CustomerService from record to class" />
   </component>
 </project>
