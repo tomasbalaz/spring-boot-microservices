@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f573a259-4509-4470-a2b9-f4c021918341" name="Changes" comment="Created module clients with interface FraudClient as @FeignClient">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/customer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/java/sk/balaz/customer/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/sk/balaz/customer/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/java/sk/balaz/customer/FraudCheckResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fraud/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fraud/src/main/java/sk/balaz/fraud/FraudCheckController.java" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/src/main/java/sk/balaz/fraud/FraudCheckController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fraud/src/main/java/sk/balaz/fraud/FraudCheckResponse.java" beforeDir="false" />
+    <list default="true" id="f573a259-4509-4470-a2b9-f4c021918341" name="Changes" comment="Replaced FraudClient OpenFeign client instead of RestTemplate">
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/sk/balaz/customer/CustomerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/sk/balaz/customer/CustomerApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +179,7 @@
       <workItem from="1649663785771" duration="138000" />
       <workItem from="1649663944344" duration="22222000" />
       <workItem from="1649765324234" duration="8083000" />
-      <workItem from="1649837958544" duration="15086000" />
+      <workItem from="1649837958544" duration="15433000" />
     </task>
     <task id="LOCAL-00001" summary="Created spring-boot-microservices application">
       <created>1649667694799</created>
@@ -369,7 +363,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649928845101</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Replaced FraudClient OpenFeign client instead of RestTemplate">
+      <created>1649932306435</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1649932306435</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -387,7 +388,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created spring-boot-microservices application" />
     <MESSAGE value="Created first microservice customer" />
     <MESSAGE value="Added Customer class and annotated it with Lombook annotations @Data,@Builder" />
     <MESSAGE value="Created CustomerController, CustomerRegistrationRequest, CustomerService as Java record" />
@@ -412,6 +412,7 @@
     <MESSAGE value="Add @LoadBalanced annotation to RestTemplate" />
     <MESSAGE value="Change hard coded hostname:ip with eureka host name" />
     <MESSAGE value="Created module clients with interface FraudClient as @FeignClient" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created module clients with interface FraudClient as @FeignClient" />
+    <MESSAGE value="Replaced FraudClient OpenFeign client instead of RestTemplate" />
+    <option name="LAST_COMMIT_MESSAGE" value="Replaced FraudClient OpenFeign client instead of RestTemplate" />
   </component>
 </project>
