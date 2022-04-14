@@ -4,8 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f573a259-4509-4470-a2b9-f4c021918341" name="Changes" comment="Replaced FraudClient OpenFeign client instead of RestTemplate">
-      <change beforePath="$PROJECT_DIR$/customer/src/main/java/sk/balaz/customer/CustomerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/sk/balaz/customer/CustomerApplication.java" afterDir="false" />
+    <list default="true" id="f573a259-4509-4470-a2b9-f4c021918341" name="Changes" comment="Add @EnableFeignClients annotations into CustomerApplication">
+      <change afterPath="$PROJECT_DIR$/clients/src/main/java/sk/balaz/clients/notification/NotificationClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clients/src/main/java/sk/balaz/clients/notification/NotificationRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification/src/main/java/sk/balaz/notification/Notification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification/src/main/java/sk/balaz/notification/NotificationApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification/src/main/java/sk/balaz/notification/NotificationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification/src/main/java/sk/balaz/notification/NotificationRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification/src/main/java/sk/balaz/notification/NotificationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification/src/main/resources/banner.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/sk/balaz/customer/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/sk/balaz/customer/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,8 +93,13 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="sk.balaz.clients.notification" />
+      <recent name="sk.balaz.notification" />
       <recent name="sk.balaz.clients.fraud" />
       <recent name="sk.balaz.fraud" />
       <recent name="sk.balaz.customer" />
@@ -96,7 +115,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.FraudApplication 2">
+  <component name="RunManager" selected="Spring Boot.NotificationApplication">
     <configuration name="CustomerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="customer" />
       <extension name="coverage">
@@ -154,15 +173,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="NotificationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="notification" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sk.balaz.notification.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="sk.balaz.notification.NotificationApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Spring Boot.FraudApplication 2" />
       <item itemvalue="Spring Boot.CustomerApplication" />
       <item itemvalue="Spring Boot.EurekaServerApplication" />
       <item itemvalue="Spring Boot.FraudApplication" />
+      <item itemvalue="Spring Boot.NotificationApplication" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.CustomerApplication" />
+        <item itemvalue="Spring Boot.NotificationApplication" />
         <item itemvalue="Spring Boot.FraudApplication" />
         <item itemvalue="Spring Boot.EurekaServerApplication" />
       </list>
@@ -179,7 +213,7 @@
       <workItem from="1649663785771" duration="138000" />
       <workItem from="1649663944344" duration="22222000" />
       <workItem from="1649765324234" duration="8083000" />
-      <workItem from="1649837958544" duration="15433000" />
+      <workItem from="1649837958544" duration="18936000" />
     </task>
     <task id="LOCAL-00001" summary="Created spring-boot-microservices application">
       <created>1649667694799</created>
@@ -370,7 +404,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649932306435</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Add @EnableFeignClients annotations into CustomerApplication">
+      <created>1649932896086</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1649932896086</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -388,7 +429,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created first microservice customer" />
     <MESSAGE value="Added Customer class and annotated it with Lombook annotations @Data,@Builder" />
     <MESSAGE value="Created CustomerController, CustomerRegistrationRequest, CustomerService as Java record" />
     <MESSAGE value="Created docker-compose.yml file with images postgres, dpage/pgadmin4" />
@@ -413,6 +453,7 @@
     <MESSAGE value="Change hard coded hostname:ip with eureka host name" />
     <MESSAGE value="Created module clients with interface FraudClient as @FeignClient" />
     <MESSAGE value="Replaced FraudClient OpenFeign client instead of RestTemplate" />
-    <option name="LAST_COMMIT_MESSAGE" value="Replaced FraudClient OpenFeign client instead of RestTemplate" />
+    <MESSAGE value="Add @EnableFeignClients annotations into CustomerApplication" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add @EnableFeignClients annotations into CustomerApplication" />
   </component>
 </project>
