@@ -2,9 +2,10 @@ package sk.balaz.customer;
 
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
 import sk.balaz.clients.fraud.FraudCheckResponse;
 import sk.balaz.clients.fraud.FraudClient;
+import sk.balaz.clients.notification.NotificationClient;
+import sk.balaz.clients.notification.NotificationRequest;
 
 @Service
 @AllArgsConstructor
@@ -13,6 +14,8 @@ public class CustomerService {
     private final CustomerRepository customerRepository;
 
     private final FraudClient fraudClient;
+
+    private final NotificationClient notificationClient;
 
     public void registerCustomer(CustomerRegistrationRequest request) {
         Customer customer = Customer.builder()
@@ -33,7 +36,16 @@ public class CustomerService {
         }
 
 
-        // TODO: send notification
+        // TODO: make it async. i.e add to queue
+        notificationClient.sendNotification(
+                new NotificationRequest(
+                        customer.getId(),
+                        customer.getEmail(),
+                        String.format("Hi %s, welcome in my microservices world...",
+                                customer.getFirstName())
+
+                )
+        );
 
     }
 }
