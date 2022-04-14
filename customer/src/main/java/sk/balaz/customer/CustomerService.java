@@ -3,6 +3,8 @@ package sk.balaz.customer;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
+import sk.balaz.clients.fraud.FraudCheckResponse;
+import sk.balaz.clients.fraud.FraudClient;
 
 @Service
 @AllArgsConstructor
@@ -10,7 +12,7 @@ public class CustomerService {
 
     private final CustomerRepository customerRepository;
 
-    private final RestTemplate restTemplate;
+    private final FraudClient fraudClient;
 
     public void registerCustomer(CustomerRegistrationRequest request) {
         Customer customer = Customer.builder()
@@ -24,11 +26,7 @@ public class CustomerService {
         // TODO: check if email valid
         // TODO: check if email not taken
         // TODO: check if fraudster
-        FraudCheckResponse fraudCheckResponse = restTemplate.getForObject(
-                "http://FRAUD/api/v1/fraud-check/{customerId}",
-                FraudCheckResponse.class,
-                customer.getId()
-        );
+        FraudCheckResponse fraudCheckResponse = fraudClient.isFraudster(customer.getId());
 
         if(fraudCheckResponse.isFraudster()) {
             throw new IllegalStateException("fraudster");
