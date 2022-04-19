@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f573a259-4509-4470-a2b9-f4c021918341" name="Changes" comment="Added spring-cloud-sleuth-zipkin dependency and enabled spring.zipkin.base-url">
-      <change afterPath="$PROJECT_DIR$/apigw/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apigw/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="f573a259-4509-4470-a2b9-f4c021918341" name="Changes" comment="Created apigw microservice">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigw/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/apigw/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +108,20 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.NotificationApplication">
+  <component name="RunManager" selected="Spring Boot.ApiGwApplication">
+    <configuration name="ApiGwApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="apigw" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="sk.balaz.apigw.ApiGwApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sk.balaz.apigw.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CustomerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="customer" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="sk.balaz.customer.CustomerApplication" />
@@ -181,6 +190,7 @@
     </configuration>
     <list>
       <item itemvalue="Spring Boot.FraudApplication 2" />
+      <item itemvalue="Spring Boot.ApiGwApplication" />
       <item itemvalue="Spring Boot.CustomerApplication" />
       <item itemvalue="Spring Boot.EurekaServerApplication" />
       <item itemvalue="Spring Boot.FraudApplication" />
@@ -188,9 +198,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.CustomerApplication" />
         <item itemvalue="Spring Boot.NotificationApplication" />
         <item itemvalue="Spring Boot.FraudApplication" />
-        <item itemvalue="Spring Boot.CustomerApplication" />
+        <item itemvalue="Spring Boot.ApiGwApplication" />
         <item itemvalue="Spring Boot.EurekaServerApplication" />
       </list>
     </recent_temporary>
@@ -208,7 +219,7 @@
       <workItem from="1649765324234" duration="8083000" />
       <workItem from="1649837958544" duration="22424000" />
       <workItem from="1650347817255" duration="635000" />
-      <workItem from="1650352180284" duration="8645000" />
+      <workItem from="1650352180284" duration="9720000" />
     </task>
     <task id="LOCAL-00001" summary="Created spring-boot-microservices application">
       <created>1649667694799</created>
@@ -448,7 +459,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650363522151</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Created apigw microservice">
+      <created>1650367441713</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1650367441713</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -466,7 +484,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created CustomerRepository class and saved customer in Database" />
     <MESSAGE value="Created microservice fraud" />
     <MESSAGE value="Updated application.yml with connection to Database for fraud microservice" />
     <MESSAGE value="Created FraudCheckHistory JPA Entity" />
@@ -491,6 +508,7 @@
     <MESSAGE value="Added spring-cloud-starter-sleuth dependency to microservices" />
     <MESSAGE value="Updated docker-compose.yml with docker image : openzipkin/zipkin" />
     <MESSAGE value="Added spring-cloud-sleuth-zipkin dependency and enabled spring.zipkin.base-url" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added spring-cloud-sleuth-zipkin dependency and enabled spring.zipkin.base-url" />
+    <MESSAGE value="Created apigw microservice" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created apigw microservice" />
   </component>
 </project>
