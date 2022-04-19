@@ -4,14 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f573a259-4509-4470-a2b9-f4c021918341" name="Changes" comment="Called notification microservice in customer microservice">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="f573a259-4509-4470-a2b9-f4c021918341" name="Changes" comment="Updated docker-compose.yml with docker image : openzipkin/zipkin">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/customer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eureka-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fraud/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fraud/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/notification/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/notification/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/notification/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +77,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
@@ -204,7 +210,7 @@
       <workItem from="1649765324234" duration="8083000" />
       <workItem from="1649837958544" duration="22424000" />
       <workItem from="1650347817255" duration="635000" />
-      <workItem from="1650352180284" duration="683000" />
+      <workItem from="1650352180284" duration="5702000" />
     </task>
     <task id="LOCAL-00001" summary="Created spring-boot-microservices application">
       <created>1649667694799</created>
@@ -423,7 +429,21 @@
       <option name="project" value="LOCAL" />
       <updated>1649936540483</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Added spring-cloud-starter-sleuth dependency to microservices">
+      <created>1650352949387</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1650352949387</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Updated docker-compose.yml with docker image : openzipkin/zipkin">
+      <created>1650353013180</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1650353013180</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -441,8 +461,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated application.yml with connection to Database" />
-    <MESSAGE value="Updated Customer.java with JPA annotations" />
     <MESSAGE value="Updated pom.xml with spring-boot-starter-data-jpa, postgresql dependencies" />
     <MESSAGE value="Created CustomerRepository class and saved customer in Database" />
     <MESSAGE value="Created microservice fraud" />
@@ -466,6 +484,8 @@
     <MESSAGE value="Created microservice notification and exposed REST POST /api/v1/notification" />
     <MESSAGE value="Updated module clients with interface NotificationClient as @FeignClient" />
     <MESSAGE value="Called notification microservice in customer microservice" />
-    <option name="LAST_COMMIT_MESSAGE" value="Called notification microservice in customer microservice" />
+    <MESSAGE value="Added spring-cloud-starter-sleuth dependency to microservices" />
+    <MESSAGE value="Updated docker-compose.yml with docker image : openzipkin/zipkin" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated docker-compose.yml with docker image : openzipkin/zipkin" />
   </component>
 </project>
