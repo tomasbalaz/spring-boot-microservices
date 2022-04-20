@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f573a259-4509-4470-a2b9-f4c021918341" name="Changes" comment="Added routes to api gateway">
+    <list default="true" id="f573a259-4509-4470-a2b9-f4c021918341" name="Changes" comment="Updated docker-compose.yml with docker image : rabbitmq:3.9.11-management-alpine">
+      <change afterPath="$PROJECT_DIR$/amqp/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amqp/src/main/java/sk/balaz/amqp/RabbitMQConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -219,7 +223,7 @@
       <workItem from="1649765324234" duration="8083000" />
       <workItem from="1649837958544" duration="22424000" />
       <workItem from="1650347817255" duration="635000" />
-      <workItem from="1650352180284" duration="15641000" />
+      <workItem from="1650352180284" duration="19503000" />
     </task>
     <task id="LOCAL-00001" summary="Created spring-boot-microservices application">
       <created>1649667694799</created>
@@ -473,7 +477,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650368489892</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Updated docker-compose.yml with docker image : rabbitmq:3.9.11-management-alpine">
+      <created>1650439399136</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1650439399136</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -491,7 +502,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated application.yml with connection to Database for fraud microservice" />
     <MESSAGE value="Created FraudCheckHistory JPA Entity" />
     <MESSAGE value="Created FraudCheckHistoryRepository, FraudCheckService" />
     <MESSAGE value="Created FraudCheckController and expose REST endpoint /api/v1/fraud-check/{customerId}" />
@@ -516,7 +526,8 @@
     <MESSAGE value="Added spring-cloud-sleuth-zipkin dependency and enabled spring.zipkin.base-url" />
     <MESSAGE value="Created apigw microservice" />
     <MESSAGE value="Added routes to api gateway" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added routes to api gateway" />
+    <MESSAGE value="Updated docker-compose.yml with docker image : rabbitmq:3.9.11-management-alpine" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated docker-compose.yml with docker image : rabbitmq:3.9.11-management-alpine" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
