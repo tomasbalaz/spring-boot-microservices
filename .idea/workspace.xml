@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f573a259-4509-4470-a2b9-f4c021918341" name="Changes" comment="Updated docker-compose.yml with docker image : rabbitmq:3.9.11-management-alpine">
-      <change afterPath="$PROJECT_DIR$/amqp/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/amqp/src/main/java/sk/balaz/amqp/RabbitMQConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="f573a259-4509-4470-a2b9-f4c021918341" name="Changes" comment="Created RabbitMQConfig with beans AmqpTemplate, MessageConverter">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amqp/src/main/java/sk/balaz/amqp/RabbitMQConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/amqp/src/main/java/sk/balaz/amqp/RabbitMQConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/customer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -223,7 +221,7 @@
       <workItem from="1649765324234" duration="8083000" />
       <workItem from="1649837958544" duration="22424000" />
       <workItem from="1650347817255" duration="635000" />
-      <workItem from="1650352180284" duration="19503000" />
+      <workItem from="1650352180284" duration="21862000" />
     </task>
     <task id="LOCAL-00001" summary="Created spring-boot-microservices application">
       <created>1649667694799</created>
@@ -484,7 +482,21 @@
       <option name="project" value="LOCAL" />
       <updated>1650439399136</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Created amqp microservice">
+      <created>1650455267356</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1650455267356</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Created RabbitMQConfig with beans AmqpTemplate, MessageConverter">
+      <created>1650455330455</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1650455330455</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -502,8 +514,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created FraudCheckHistory JPA Entity" />
-    <MESSAGE value="Created FraudCheckHistoryRepository, FraudCheckService" />
     <MESSAGE value="Created FraudCheckController and expose REST endpoint /api/v1/fraud-check/{customerId}" />
     <MESSAGE value="Refactored CustomerController, CustomerService from record to class" />
     <MESSAGE value="Created CustomerConfig with RestTemplate Bean" />
@@ -527,7 +537,9 @@
     <MESSAGE value="Created apigw microservice" />
     <MESSAGE value="Added routes to api gateway" />
     <MESSAGE value="Updated docker-compose.yml with docker image : rabbitmq:3.9.11-management-alpine" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated docker-compose.yml with docker image : rabbitmq:3.9.11-management-alpine" />
+    <MESSAGE value="Created amqp microservice" />
+    <MESSAGE value="Created RabbitMQConfig with beans AmqpTemplate, MessageConverter" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created RabbitMQConfig with beans AmqpTemplate, MessageConverter" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
