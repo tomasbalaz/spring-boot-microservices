@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f573a259-4509-4470-a2b9-f4c021918341" name="Changes" comment="Updated NotificationConfig with beans TopicExchange, Queue, Binding">
-      <change afterPath="$PROJECT_DIR$/amqp/src/main/java/sk/balaz/amqp/RabbitMQMessageProducer.java" afterDir="false" />
+    <list default="true" id="f573a259-4509-4470-a2b9-f4c021918341" name="Changes" comment="Created RabbitMQMessageProducer for sending messages to RabbitMQ">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/src/main/java/sk/balaz/notification/NotificationApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification/src/main/java/sk/balaz/notification/NotificationApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/src/main/java/sk/balaz/notification/NotificationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification/src/main/java/sk/balaz/notification/NotificationConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/notification/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +110,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ApiGwApplication">
+  <component name="RunManager" selected="Spring Boot.NotificationApplication">
     <configuration name="ApiGwApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="apigw" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="sk.balaz.apigw.ApiGwApplication" />
@@ -199,10 +201,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.NotificationApplication" />
+        <item itemvalue="Spring Boot.EurekaServerApplication" />
         <item itemvalue="Spring Boot.CustomerApplication" />
         <item itemvalue="Spring Boot.FraudApplication" />
         <item itemvalue="Spring Boot.ApiGwApplication" />
-        <item itemvalue="Spring Boot.EurekaServerApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -219,7 +221,7 @@
       <workItem from="1649765324234" duration="8083000" />
       <workItem from="1649837958544" duration="22424000" />
       <workItem from="1650347817255" duration="635000" />
-      <workItem from="1650352180284" duration="27137000" />
+      <workItem from="1650352180284" duration="31541000" />
     </task>
     <task id="LOCAL-00001" summary="Created spring-boot-microservices application">
       <created>1649667694799</created>
@@ -522,7 +524,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650524942036</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Created RabbitMQMessageProducer for sending messages to RabbitMQ">
+      <created>1650525821638</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1650525821638</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -540,7 +549,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated pom.xml with spring-cloud-dependencies dependency in version 2020.0.3" />
     <MESSAGE value="Created microservice eureka-server" />
     <MESSAGE value="Enabled eureka-server microservice" />
     <MESSAGE value="Enabled customer microservice talks with Eureka server" />
@@ -565,7 +573,8 @@
     <MESSAGE value="Add maven dependency spring-boot-starter-amqp, amqp to microservices customer, notification" />
     <MESSAGE value="Created NotificationConfig class and add proper values into application.yml" />
     <MESSAGE value="Updated NotificationConfig with beans TopicExchange, Queue, Binding" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated NotificationConfig with beans TopicExchange, Queue, Binding" />
+    <MESSAGE value="Created RabbitMQMessageProducer for sending messages to RabbitMQ" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created RabbitMQMessageProducer for sending messages to RabbitMQ" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -574,6 +583,11 @@
           <url>file://$PROJECT_DIR$/notification/src/main/java/sk/balaz/notification/NotificationController.java</url>
           <line>20</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/notification/src/main/java/sk/balaz/notification/NotificationApplication.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

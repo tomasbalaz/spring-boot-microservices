@@ -38,7 +38,7 @@ public class NotificationConfig {
 
     @Bean
     public Queue notificationQueue() {
-        return new Queue(this.internalNotificationRoutingKey);
+        return new Queue(this.notificationQueue);
     }
 
     @Bean
