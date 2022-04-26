@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f573a259-4509-4470-a2b9-f4c021918341" name="Changes" comment="Added maven jib-maven-plugin to customer, eureka,fraud,notification microservice for building docker images">
+    <list default="true" id="f573a259-4509-4470-a2b9-f4c021918341" name="Changes" comment="Updated docker-compose.yml with images balaztomas85/eureka-server:latest and balaztomas85/apigw:latest">
+      <change afterPath="$PROJECT_DIR$/apigw/src/main/resources/application-docker.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigw/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/apigw/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +90,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "openjdk-17",
-    "last_opened_file_path": "C:/Workspaces/Openet/spending-limit-control-stages",
+    "last_opened_file_path": "C:/Workspaces/Experiments/spring-boot-microservices/apigw/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -234,14 +237,7 @@
       <workItem from="1649837958544" duration="22424000" />
       <workItem from="1650347817255" duration="635000" />
       <workItem from="1650352180284" duration="46563000" />
-      <workItem from="1650868719101" duration="13847000" />
-    </task>
-    <task id="LOCAL-00005" summary="Created CustomerController, CustomerRegistrationRequest, CustomerService as Java record">
-      <created>1649676616662</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1649676616662</updated>
+      <workItem from="1650868719101" duration="14464000" />
     </task>
     <task id="LOCAL-00006" summary="Created docker-compose.yml file with images postgres, dpage/pgadmin4">
       <created>1649678010068</created>
@@ -579,7 +575,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650955823600</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="Updated docker-compose.yml with images balaztomas85/eureka-server:latest and balaztomas85/apigw:latest">
+      <created>1650956443900</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1650956443900</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -597,7 +600,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created microservice notification and exposed REST POST /api/v1/notification" />
     <MESSAGE value="Updated module clients with interface NotificationClient as @FeignClient" />
     <MESSAGE value="Called notification microservice in customer microservice" />
     <MESSAGE value="Added spring-cloud-starter-sleuth dependency to microservices" />
@@ -622,7 +624,8 @@
     <MESSAGE value="Added maven jib-maven-plugin to parent pom.xml for building docker images" />
     <MESSAGE value="Added maven jib-maven-plugin to apigw microservice for building docker images" />
     <MESSAGE value="Added maven jib-maven-plugin to customer, eureka,fraud,notification microservice for building docker images" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added maven jib-maven-plugin to customer, eureka,fraud,notification microservice for building docker images" />
+    <MESSAGE value="Updated docker-compose.yml with images balaztomas85/eureka-server:latest and balaztomas85/apigw:latest" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated docker-compose.yml with images balaztomas85/eureka-server:latest and balaztomas85/apigw:latest" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
