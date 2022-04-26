@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f573a259-4509-4470-a2b9-f4c021918341" name="Changes" comment="Updated docker-compose.yml with images balaztomas85/eureka-server:latest and balaztomas85/apigw:latest">
-      <change afterPath="$PROJECT_DIR$/apigw/src/main/resources/application-docker.yml" afterDir="false" />
+    <list default="true" id="f573a259-4509-4470-a2b9-f4c021918341" name="Changes" comment="Updated docker-compose.yml new docker network : spring">
+      <change afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application-docker.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apigw/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/apigw/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -90,7 +89,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "openjdk-17",
-    "last_opened_file_path": "C:/Workspaces/Experiments/spring-boot-microservices/apigw/src/main/resources",
+    "last_opened_file_path": "C:/Workspaces/Experiments/spring-boot-microservices/eureka-server/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -115,6 +114,8 @@
       <recent name="sk.balaz.customer" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Workspaces\Experiments\spring-boot-microservices\eureka-server\src\main\resources" />
+      <recent name="C:\Workspaces\Experiments\spring-boot-microservices\apigw\src\main\resources" />
       <recent name="C:\Workspaces\Experiments\spring-boot-microservices" />
     </key>
   </component>
@@ -237,14 +238,8 @@
       <workItem from="1649837958544" duration="22424000" />
       <workItem from="1650347817255" duration="635000" />
       <workItem from="1650352180284" duration="46563000" />
-      <workItem from="1650868719101" duration="14464000" />
-    </task>
-    <task id="LOCAL-00006" summary="Created docker-compose.yml file with images postgres, dpage/pgadmin4">
-      <created>1649678010068</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1649678010068</updated>
+      <workItem from="1650868719101" duration="15407000" />
+      <workItem from="1650973540888" duration="2293000" />
     </task>
     <task id="LOCAL-00007" summary="Updated application.yml with connection to Database">
       <created>1649750731409</created>
@@ -582,7 +577,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650956443900</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="Updated docker-compose.yml new docker network : spring">
+      <created>1650956947039</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1650956947040</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -600,7 +602,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated module clients with interface NotificationClient as @FeignClient" />
     <MESSAGE value="Called notification microservice in customer microservice" />
     <MESSAGE value="Added spring-cloud-starter-sleuth dependency to microservices" />
     <MESSAGE value="Updated docker-compose.yml with docker image : openzipkin/zipkin" />
@@ -625,7 +626,8 @@
     <MESSAGE value="Added maven jib-maven-plugin to apigw microservice for building docker images" />
     <MESSAGE value="Added maven jib-maven-plugin to customer, eureka,fraud,notification microservice for building docker images" />
     <MESSAGE value="Updated docker-compose.yml with images balaztomas85/eureka-server:latest and balaztomas85/apigw:latest" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated docker-compose.yml with images balaztomas85/eureka-server:latest and balaztomas85/apigw:latest" />
+    <MESSAGE value="Updated docker-compose.yml new docker network : spring" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated docker-compose.yml new docker network : spring" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
