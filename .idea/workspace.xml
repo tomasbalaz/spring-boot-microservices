@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f573a259-4509-4470-a2b9-f4c021918341" name="Changes" comment="Added maven jib-maven-plugin to apigw microservice for building docker images">
+    <list default="true" id="f573a259-4509-4470-a2b9-f4c021918341" name="Changes" comment="Added maven jib-maven-plugin to customer, eureka,fraud,notification microservice for building docker images">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -235,14 +234,7 @@
       <workItem from="1649837958544" duration="22424000" />
       <workItem from="1650347817255" duration="635000" />
       <workItem from="1650352180284" duration="46563000" />
-      <workItem from="1650868719101" duration="13212000" />
-    </task>
-    <task id="LOCAL-00004" summary="Created CustomerController, CustomerRegistrationRequest, CustomerService as Java record">
-      <created>1649676330911</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1649676330911</updated>
+      <workItem from="1650868719101" duration="13847000" />
     </task>
     <task id="LOCAL-00005" summary="Created CustomerController, CustomerRegistrationRequest, CustomerService as Java record">
       <created>1649676616662</created>
@@ -580,7 +572,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650952257209</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Added maven jib-maven-plugin to customer, eureka,fraud,notification microservice for building docker images">
+      <created>1650955823600</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1650955823600</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -598,7 +597,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add @EnableFeignClients annotations into CustomerApplication" />
     <MESSAGE value="Created microservice notification and exposed REST POST /api/v1/notification" />
     <MESSAGE value="Updated module clients with interface NotificationClient as @FeignClient" />
     <MESSAGE value="Called notification microservice in customer microservice" />
@@ -623,7 +621,8 @@
     <MESSAGE value="Updated microservices with spring-boot-maven-plugin" />
     <MESSAGE value="Added maven jib-maven-plugin to parent pom.xml for building docker images" />
     <MESSAGE value="Added maven jib-maven-plugin to apigw microservice for building docker images" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added maven jib-maven-plugin to apigw microservice for building docker images" />
+    <MESSAGE value="Added maven jib-maven-plugin to customer, eureka,fraud,notification microservice for building docker images" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added maven jib-maven-plugin to customer, eureka,fraud,notification microservice for building docker images" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
