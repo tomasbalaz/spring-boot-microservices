@@ -97,6 +97,11 @@
                 </platform>
               </platforms>
             </from>
+            <to>
+              <tags>
+                <tag>latest</tag>
+              </tags>
+            </to>
           </configuration>
           <executions>
             <execution>
