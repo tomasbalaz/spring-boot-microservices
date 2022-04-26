@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f573a259-4509-4470-a2b9-f4c021918341" name="Changes" comment="Updated microservices with spring-boot-maven-plugin">
+    <list default="true" id="f573a259-4509-4470-a2b9-f4c021918341" name="Changes" comment="Added maven jib-maven-plugin to parent pom.xml for building docker images">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigw/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/apigw/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,6 +61,16 @@
         <option name="userSettingsFile" value="C:\Workspaces\Openet\settings.xml" />
       </MavenGeneralSettings>
     </option>
+    <option name="enabledProfiles">
+      <list>
+        <option value="build-docker-image" />
+      </list>
+    </option>
+    <option name="disabledProfiles">
+      <list>
+        <option value="archetype" />
+      </list>
+    </option>
   </component>
   <component name="ProjectId" id="27dxUrRIByTnlLPEUGXF6ajSxKj" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -87,6 +98,7 @@
     "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.27586207",
+    "settings.editor.selected.configurable": "MavenSettings",
     "spring.configuration.checksum": "0f9d3da1cbfc4149b8d7314b1e9d0ee5"
   }
 }]]></component>
@@ -224,14 +236,7 @@
       <workItem from="1649837958544" duration="22424000" />
       <workItem from="1650347817255" duration="635000" />
       <workItem from="1650352180284" duration="46563000" />
-      <workItem from="1650868719101" duration="5441000" />
-    </task>
-    <task id="LOCAL-00002" summary="Created first microservice customer">
-      <created>1649669814864</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1649669814864</updated>
+      <workItem from="1650868719101" duration="9734000" />
     </task>
     <task id="LOCAL-00003" summary="Added Customer class and annotated it with Lombook annotations @Data,@Builder">
       <created>1649675095309</created>
@@ -569,7 +574,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650628574558</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="Added maven jib-maven-plugin to parent pom.xml for building docker images">
+      <created>1650893613373</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1650893613374</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -587,7 +599,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created module clients with interface FraudClient as @FeignClient" />
     <MESSAGE value="Replaced FraudClient OpenFeign client instead of RestTemplate" />
     <MESSAGE value="Add @EnableFeignClients annotations into CustomerApplication" />
     <MESSAGE value="Created microservice notification and exposed REST POST /api/v1/notification" />
@@ -612,7 +623,8 @@
     <MESSAGE value="Updated common pom.xml with maven-compiler-plugin dependency and updated spring-boot-maven-plugin with repackage goal" />
     <MESSAGE value="Updated amqp, clients pom.xml with maven-compiler-plugin dependency" />
     <MESSAGE value="Updated microservices with spring-boot-maven-plugin" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated microservices with spring-boot-maven-plugin" />
+    <MESSAGE value="Added maven jib-maven-plugin to parent pom.xml for building docker images" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added maven jib-maven-plugin to parent pom.xml for building docker images" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
