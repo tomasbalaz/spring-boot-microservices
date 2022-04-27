@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f573a259-4509-4470-a2b9-f4c021918341" name="Changes" comment="Updated docker-compose.yml with balaztomas85/customer:latest image">
+    <list default="true" id="f573a259-4509-4470-a2b9-f4c021918341" name="Changes" comment="Created application-docker.yml for microservices customer, fraud, notification">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,29 +73,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Workspaces/Experiments/spring-boot-microservices/fraud/src/main/resources&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.27586207&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;0f9d3da1cbfc4149b8d7314b1e9d0ee5&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "openjdk-17",
+    "last_opened_file_path": "C:/Workspaces/Experiments/spring-boot-microservices/notification/src/main/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.27586207",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "spring.configuration.checksum": "0f9d3da1cbfc4149b8d7314b1e9d0ee5"
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -107,11 +108,11 @@
       <recent name="sk.balaz.customer" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Workspaces\Experiments\spring-boot-microservices\notification\src\main\resources" />
       <recent name="C:\Workspaces\Experiments\spring-boot-microservices\fraud\src\main\resources" />
       <recent name="C:\Workspaces\Experiments\spring-boot-microservices\customer\src\main\resources" />
       <recent name="C:\Workspaces\Experiments\spring-boot-microservices\eureka-server\src\main\resources" />
       <recent name="C:\Workspaces\Experiments\spring-boot-microservices\apigw\src\main\resources" />
-      <recent name="C:\Workspaces\Experiments\spring-boot-microservices" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -273,14 +274,7 @@
       <workItem from="1650973540888" duration="8506000" />
       <workItem from="1651057854953" duration="22000" />
       <workItem from="1651057905903" duration="380000" />
-      <workItem from="1651058323274" duration="2175000" />
-    </task>
-    <task id="LOCAL-00009" summary="Updated pom.xml with spring-boot-starter-data-jpa, postgresql dependencies">
-      <created>1649750825404</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1649750825404</updated>
+      <workItem from="1651058323274" duration="3472000" />
     </task>
     <task id="LOCAL-00010" summary="Created CustomerRepository class and saved customer in Database">
       <created>1649750865493</created>
@@ -618,7 +612,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650979666046</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="Created application-docker.yml for microservices customer, fraud, notification">
+      <created>1651060842232</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1651060842233</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -636,7 +637,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated docker-compose.yml with docker image : openzipkin/zipkin" />
     <MESSAGE value="Added spring-cloud-sleuth-zipkin dependency and enabled spring.zipkin.base-url" />
     <MESSAGE value="Created apigw microservice" />
     <MESSAGE value="Added routes to api gateway" />
@@ -661,7 +661,8 @@
     <MESSAGE value="Updated docker-compose.yml new docker network : spring" />
     <MESSAGE value="Updated docker-compose.yml eureka-server, api-gw with spring profile docker" />
     <MESSAGE value="Updated docker-compose.yml with balaztomas85/customer:latest image" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated docker-compose.yml with balaztomas85/customer:latest image" />
+    <MESSAGE value="Created application-docker.yml for microservices customer, fraud, notification" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created application-docker.yml for microservices customer, fraud, notification" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
