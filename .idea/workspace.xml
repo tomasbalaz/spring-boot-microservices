@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f573a259-4509-4470-a2b9-f4c021918341" name="Changes" comment="Updated docker-compose.yml with balaztomas85/fraud:latest, balaztomas85/notification:latest images">
-      <change afterPath="$PROJECT_DIR$/k8s/minikube/bootstrap/postgres/configmap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/minikube/bootstrap/postgres/service.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/minikube/bootstrap/postgres/statefulset.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/minikube/bootstrap/postgres/volume.yml" afterDir="false" />
+    <list default="true" id="f573a259-4509-4470-a2b9-f4c021918341" name="Changes" comment="Created K8S resources for pod rabbitmq">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -84,29 +80,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Workspaces/Experiments/spring-boot-microservices/notification/src/main/resources&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.27586207&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;0f9d3da1cbfc4149b8d7314b1e9d0ee5&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "openjdk-17",
+    "last_opened_file_path": "C:/Workspaces/Experiments/spring-boot-microservices/k8s/minikube/bootstrap/rabbitmq",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.27586207",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "spring.configuration.checksum": "0f9d3da1cbfc4149b8d7314b1e9d0ee5"
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -119,11 +115,11 @@
       <recent name="sk.balaz.customer" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Workspaces\Experiments\spring-boot-microservices\k8s\minikube\bootstrap\rabbitmq" />
       <recent name="C:\Workspaces\Experiments\spring-boot-microservices\notification\src\main\resources" />
       <recent name="C:\Workspaces\Experiments\spring-boot-microservices\fraud\src\main\resources" />
       <recent name="C:\Workspaces\Experiments\spring-boot-microservices\customer\src\main\resources" />
       <recent name="C:\Workspaces\Experiments\spring-boot-microservices\eureka-server\src\main\resources" />
-      <recent name="C:\Workspaces\Experiments\spring-boot-microservices\apigw\src\main\resources" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -287,28 +283,7 @@
       <workItem from="1651057905903" duration="380000" />
       <workItem from="1651058323274" duration="3472000" />
       <workItem from="1651495188463" duration="7172000" />
-      <workItem from="1651575753139" duration="1098000" />
-    </task>
-    <task id="LOCAL-00010" summary="Created CustomerRepository class and saved customer in Database">
-      <created>1649750865493</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1649750865493</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Created microservice fraud">
-      <created>1649761038290</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1649761038290</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Updated application.yml with connection to Database for fraud microservice">
-      <created>1649761431457</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1649761431457</updated>
+      <workItem from="1651575753139" duration="4043000" />
     </task>
     <task id="LOCAL-00013" summary="Created FraudCheckHistory JPA Entity">
       <created>1649762043822</created>
@@ -632,7 +607,28 @@
       <option name="project" value="LOCAL" />
       <updated>1651060842233</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="Created configmap.yml, service.yml, statefulset.yml, volume.yml for K8S pod postgres">
+      <created>1651577257825</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1651577257826</updated>
+    </task>
+    <task id="LOCAL-00060" summary="Created K8S resources for pod zipkin">
+      <created>1651579951829</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1651579951829</updated>
+    </task>
+    <task id="LOCAL-00061" summary="Created K8S resources for pod rabbitmq">
+      <created>1651579975310</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1651579975310</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -650,9 +646,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added spring-cloud-sleuth-zipkin dependency and enabled spring.zipkin.base-url" />
-    <MESSAGE value="Created apigw microservice" />
-    <MESSAGE value="Added routes to api gateway" />
     <MESSAGE value="Updated docker-compose.yml with docker image : rabbitmq:3.9.11-management-alpine" />
     <MESSAGE value="Created amqp microservice" />
     <MESSAGE value="Created RabbitMQConfig with beans AmqpTemplate, MessageConverter" />
@@ -675,7 +668,10 @@
     <MESSAGE value="Updated docker-compose.yml eureka-server, api-gw with spring profile docker" />
     <MESSAGE value="Updated docker-compose.yml with balaztomas85/customer:latest image" />
     <MESSAGE value="Created application-docker.yml for microservices customer, fraud, notification" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created application-docker.yml for microservices customer, fraud, notification" />
+    <MESSAGE value="Created configmap.yml, service.yml, statefulset.yml, volume.yml for K8S pod postgres" />
+    <MESSAGE value="Created K8S resources for pod zipkin" />
+    <MESSAGE value="Created K8S resources for pod rabbitmq" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created K8S resources for pod rabbitmq" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
