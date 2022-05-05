@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f573a259-4509-4470-a2b9-f4c021918341" name="Changes" comment="Created application-kube.yml k8s property file for microservices customer, fraud, notification microservices">
-      <change afterPath="$PROJECT_DIR$/k8s/minikube/services/customer/deployment.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/minikube/services/customer/service.yml" afterDir="false" />
+    <list default="true" id="f573a259-4509-4470-a2b9-f4c021918341" name="Changes" comment="Created deployment.yml, service.yml for customer microservice">
+      <change afterPath="$PROJECT_DIR$/k8s/minikube/services/fraud/deployment.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/minikube/services/fraud/service.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/minikube/services/notification/deployment.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/minikube/services/notification/service.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
@@ -93,7 +95,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "openjdk-17",
-    "last_opened_file_path": "C:/Workspaces/Experiments/spring-boot-microservices/clients/src/main/resources",
+    "last_opened_file_path": "C:/Workspaces/Experiments/spring-boot-microservices/k8s/minikube/services",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -118,11 +120,11 @@
       <recent name="sk.balaz.customer" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Workspaces\Experiments\spring-boot-microservices\k8s\minikube\services" />
       <recent name="C:\Workspaces\Experiments\spring-boot-microservices\clients\src\main\resources" />
       <recent name="C:\Workspaces\Experiments\spring-boot-microservices\notification\src\main\resources" />
       <recent name="C:\Workspaces\Experiments\spring-boot-microservices\fraud\src\main\resources" />
       <recent name="C:\Workspaces\Experiments\spring-boot-microservices\customer\src\main\resources" />
-      <recent name="C:\Workspaces\Experiments\spring-boot-microservices\k8s\minikube\bootstrap\rabbitmq" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -299,14 +301,7 @@
       <workItem from="1651058323274" duration="3472000" />
       <workItem from="1651495188463" duration="7172000" />
       <workItem from="1651575753139" duration="4833000" />
-      <workItem from="1651732399853" duration="8540000" />
-    </task>
-    <task id="LOCAL-00017" summary="Created CustomerConfig with RestTemplate Bean">
-      <created>1649831588167</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1649831588167</updated>
+      <workItem from="1651732399853" duration="13461000" />
     </task>
     <task id="LOCAL-00018" summary="Called REST API /api/v1/fraud-check/{customerId} from customer microservice">
       <created>1649831687609</created>
@@ -644,7 +639,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651741507914</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="Created deployment.yml, service.yml for customer microservice">
+      <created>1651743410825</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1651743410825</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -662,7 +664,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add maven dependency spring-boot-starter-amqp, amqp to microservices customer, notification" />
     <MESSAGE value="Created NotificationConfig class and add proper values into application.yml" />
     <MESSAGE value="Updated NotificationConfig with beans TopicExchange, Queue, Binding" />
     <MESSAGE value="Created RabbitMQMessageProducer for sending messages to RabbitMQ" />
@@ -687,7 +688,8 @@
     <MESSAGE value="Refactoring Feign Clients for running in k8S" />
     <MESSAGE value="Refactoring microservices customer, fraud, notification for getting new feign client properties" />
     <MESSAGE value="Created application-kube.yml k8s property file for microservices customer, fraud, notification microservices" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created application-kube.yml k8s property file for microservices customer, fraud, notification microservices" />
+    <MESSAGE value="Created deployment.yml, service.yml for customer microservice" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created deployment.yml, service.yml for customer microservice" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
