@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f573a259-4509-4470-a2b9-f4c021918341" name="Changes" comment="Refactoring microservices customer, fraud, notification for getting new feign client properties">
-      <change afterPath="$PROJECT_DIR$/clients/src/main/resources/clients-docker.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/src/main/resources/application-kube.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fraud/src/main/resources/application-kube.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification/src/main/resources/application-kube.yml" afterDir="false" />
+    <list default="true" id="f573a259-4509-4470-a2b9-f4c021918341" name="Changes" comment="Created application-kube.yml k8s property file for microservices customer, fraud, notification microservices">
+      <change afterPath="$PROJECT_DIR$/k8s/minikube/services/customer/deployment.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/minikube/services/customer/service.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
@@ -301,14 +299,7 @@
       <workItem from="1651058323274" duration="3472000" />
       <workItem from="1651495188463" duration="7172000" />
       <workItem from="1651575753139" duration="4833000" />
-      <workItem from="1651732399853" duration="6658000" />
-    </task>
-    <task id="LOCAL-00016" summary="Refactored CustomerController, CustomerService from record to class">
-      <created>1649763369081</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1649763369081</updated>
+      <workItem from="1651732399853" duration="8540000" />
     </task>
     <task id="LOCAL-00017" summary="Created CustomerConfig with RestTemplate Bean">
       <created>1649831588167</created>
@@ -646,7 +637,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651735979543</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="Created application-kube.yml k8s property file for microservices customer, fraud, notification microservices">
+      <created>1651741507914</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1651741507914</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -664,7 +662,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated RabbitMQConfig with SimpleRabbitListenerContainerFactory bean" />
     <MESSAGE value="Add maven dependency spring-boot-starter-amqp, amqp to microservices customer, notification" />
     <MESSAGE value="Created NotificationConfig class and add proper values into application.yml" />
     <MESSAGE value="Updated NotificationConfig with beans TopicExchange, Queue, Binding" />
@@ -689,7 +686,8 @@
     <MESSAGE value="Disabled eureka server in microservices customer, fraud, notification" />
     <MESSAGE value="Refactoring Feign Clients for running in k8S" />
     <MESSAGE value="Refactoring microservices customer, fraud, notification for getting new feign client properties" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactoring microservices customer, fraud, notification for getting new feign client properties" />
+    <MESSAGE value="Created application-kube.yml k8s property file for microservices customer, fraud, notification microservices" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created application-kube.yml k8s property file for microservices customer, fraud, notification microservices" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
