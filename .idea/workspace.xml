@@ -4,15 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f573a259-4509-4470-a2b9-f4c021918341" name="Changes" comment="Disabled eureka server in microservices customer, fraud, notification">
-      <change afterPath="$PROJECT_DIR$/clients/src/main/resources/clients-default.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clients/src/main/resources/clients-kube.properties" afterDir="false" />
+    <list default="true" id="f573a259-4509-4470-a2b9-f4c021918341" name="Changes" comment="Refactoring microservices customer, fraud, notification for getting new feign client properties">
+      <change afterPath="$PROJECT_DIR$/clients/src/main/resources/clients-docker.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/src/main/resources/application-kube.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fraud/src/main/resources/application-kube.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification/src/main/resources/application-kube.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clients/src/main/java/sk/balaz/clients/fraud/FraudClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/clients/src/main/java/sk/balaz/clients/fraud/FraudClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clients/src/main/java/sk/balaz/clients/notification/NotificationClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/clients/src/main/java/sk/balaz/clients/notification/NotificationClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/java/sk/balaz/customer/CustomerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/sk/balaz/customer/CustomerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fraud/src/main/java/sk/balaz/fraud/FraudApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/src/main/java/sk/balaz/fraud/FraudApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification/src/main/java/sk/balaz/notification/NotificationApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification/src/main/java/sk/balaz/notification/NotificationApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,29 +85,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Workspaces/Experiments/spring-boot-microservices/k8s/minikube/bootstrap/rabbitmq&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.27586207&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;0f9d3da1cbfc4149b8d7314b1e9d0ee5&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "openjdk-17",
+    "last_opened_file_path": "C:/Workspaces/Experiments/spring-boot-microservices/clients/src/main/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.27586207",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "spring.configuration.checksum": "0f9d3da1cbfc4149b8d7314b1e9d0ee5"
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -122,11 +120,11 @@
       <recent name="sk.balaz.customer" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Workspaces\Experiments\spring-boot-microservices\k8s\minikube\bootstrap\rabbitmq" />
+      <recent name="C:\Workspaces\Experiments\spring-boot-microservices\clients\src\main\resources" />
       <recent name="C:\Workspaces\Experiments\spring-boot-microservices\notification\src\main\resources" />
       <recent name="C:\Workspaces\Experiments\spring-boot-microservices\fraud\src\main\resources" />
       <recent name="C:\Workspaces\Experiments\spring-boot-microservices\customer\src\main\resources" />
-      <recent name="C:\Workspaces\Experiments\spring-boot-microservices\eureka-server\src\main\resources" />
+      <recent name="C:\Workspaces\Experiments\spring-boot-microservices\k8s\minikube\bootstrap\rabbitmq" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -141,7 +139,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Docker.docker-compose.yml.postgres: Compose Deployment">
+  <component name="RunManager" selected="Spring Boot.NotificationApplication">
     <configuration name="apigw [clean]" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -186,6 +184,10 @@
       </method>
     </configuration>
     <configuration name="CustomerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" />
+      <envs>
+        <env name="SPRING_PROFILES_ACTIVE" value="default" />
+      </envs>
       <module name="customer" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="sk.balaz.customer.CustomerApplication" />
       <extension name="coverage">
@@ -213,6 +215,10 @@
       </method>
     </configuration>
     <configuration name="FraudApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" />
+      <envs>
+        <env name="SPRING_PROFILES_ACTIVE" value="default" />
+      </envs>
       <module name="fraud" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="sk.balaz.fraud.FraudApplication" />
       <extension name="coverage">
@@ -226,6 +232,10 @@
       </method>
     </configuration>
     <configuration name="NotificationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" />
+      <envs>
+        <env name="SPRING_PROFILES_ACTIVE" value="default" />
+      </envs>
       <module name="notification" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="sk.balaz.notification.NotificationApplication" />
       <extension name="coverage">
@@ -262,11 +272,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.docker-compose.yml.postgres: Compose Deployment" />
         <item itemvalue="Spring Boot.NotificationApplication" />
-        <item itemvalue="Spring Boot.CustomerApplication" />
-        <item itemvalue="Spring Boot.ApiGwApplication" />
         <item itemvalue="Spring Boot.FraudApplication" />
+        <item itemvalue="Spring Boot.CustomerApplication" />
+        <item itemvalue="Docker.docker-compose.yml.postgres: Compose Deployment" />
+        <item itemvalue="Spring Boot.ApiGwApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -291,21 +301,7 @@
       <workItem from="1651058323274" duration="3472000" />
       <workItem from="1651495188463" duration="7172000" />
       <workItem from="1651575753139" duration="4833000" />
-      <workItem from="1651732399853" duration="2863000" />
-    </task>
-    <task id="LOCAL-00014" summary="Created FraudCheckHistoryRepository, FraudCheckService">
-      <created>1649762556168</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1649762556168</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Created FraudCheckController and expose REST endpoint /api/v1/fraud-check/{customerId}">
-      <created>1649763200181</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1649763200182</updated>
+      <workItem from="1651732399853" duration="6658000" />
     </task>
     <task id="LOCAL-00016" summary="Refactored CustomerController, CustomerService from record to class">
       <created>1649763369081</created>
@@ -636,7 +632,21 @@
       <option name="project" value="LOCAL" />
       <updated>1651580741425</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="Refactoring Feign Clients for running in k8S">
+      <created>1651735906803</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1651735906804</updated>
+    </task>
+    <task id="LOCAL-00064" summary="Refactoring microservices customer, fraud, notification for getting new feign client properties">
+      <created>1651735979543</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1651735979543</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -654,8 +664,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created amqp microservice" />
-    <MESSAGE value="Created RabbitMQConfig with beans AmqpTemplate, MessageConverter" />
     <MESSAGE value="Updated RabbitMQConfig with SimpleRabbitListenerContainerFactory bean" />
     <MESSAGE value="Add maven dependency spring-boot-starter-amqp, amqp to microservices customer, notification" />
     <MESSAGE value="Created NotificationConfig class and add proper values into application.yml" />
@@ -679,7 +687,9 @@
     <MESSAGE value="Created K8S resources for pod zipkin" />
     <MESSAGE value="Created K8S resources for pod rabbitmq" />
     <MESSAGE value="Disabled eureka server in microservices customer, fraud, notification" />
-    <option name="LAST_COMMIT_MESSAGE" value="Disabled eureka server in microservices customer, fraud, notification" />
+    <MESSAGE value="Refactoring Feign Clients for running in k8S" />
+    <MESSAGE value="Refactoring microservices customer, fraud, notification for getting new feign client properties" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring microservices customer, fraud, notification for getting new feign client properties" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
