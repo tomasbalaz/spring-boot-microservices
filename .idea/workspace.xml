@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f573a259-4509-4470-a2b9-f4c021918341" name="Changes" comment="Created deployment.yml, service.yml for customer microservice">
-      <change afterPath="$PROJECT_DIR$/k8s/minikube/services/fraud/deployment.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/minikube/services/fraud/service.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/minikube/services/notification/deployment.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/minikube/services/notification/service.yml" afterDir="false" />
+    <list default="true" id="f573a259-4509-4470-a2b9-f4c021918341" name="Changes" comment="Created deployment.yml, service.yml for notification microservice">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -85,29 +83,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "openjdk-17",
-    "last_opened_file_path": "C:/Workspaces/Experiments/spring-boot-microservices/k8s/minikube/services",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.27586207",
-    "settings.editor.selected.configurable": "MavenSettings",
-    "spring.configuration.checksum": "0f9d3da1cbfc4149b8d7314b1e9d0ee5"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Workspaces/Experiments/spring.boot.master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.27586207&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;0f9d3da1cbfc4149b8d7314b1e9d0ee5&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -301,21 +299,15 @@
       <workItem from="1651058323274" duration="3472000" />
       <workItem from="1651495188463" duration="7172000" />
       <workItem from="1651575753139" duration="4833000" />
-      <workItem from="1651732399853" duration="13461000" />
-    </task>
-    <task id="LOCAL-00018" summary="Called REST API /api/v1/fraud-check/{customerId} from customer microservice">
-      <created>1649831687609</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1649831687609</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Updated pom.xml with spring-cloud-dependencies dependency in version 2020.0.3">
-      <created>1649840337181</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1649840337181</updated>
+      <workItem from="1651732399853" duration="18059000" />
+      <workItem from="1651820506081" duration="3689000" />
+      <workItem from="1652079738096" duration="629000" />
+      <workItem from="1652098271467" duration="452000" />
+      <workItem from="1652166163926" duration="1826000" />
+      <workItem from="1652170058100" duration="12000" />
+      <workItem from="1653647234467" duration="2042000" />
+      <workItem from="1654000482505" duration="3003000" />
+      <workItem from="1654173006870" duration="689000" />
     </task>
     <task id="LOCAL-00020" summary="Created microservice eureka-server">
       <created>1649848566870</created>
@@ -646,7 +638,21 @@
       <option name="project" value="LOCAL" />
       <updated>1651743410825</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="Created deployment.yml, service.yml for fraud microservice">
+      <created>1651754245215</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1651754245216</updated>
+    </task>
+    <task id="LOCAL-00068" summary="Created deployment.yml, service.yml for notification microservice">
+      <created>1651754272988</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1651754272988</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -664,8 +670,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created NotificationConfig class and add proper values into application.yml" />
-    <MESSAGE value="Updated NotificationConfig with beans TopicExchange, Queue, Binding" />
     <MESSAGE value="Created RabbitMQMessageProducer for sending messages to RabbitMQ" />
     <MESSAGE value="Publish message from notification microservice to RabbitMQ" />
     <MESSAGE value="Updated customer microservice send message to RabbitMq" />
@@ -689,7 +693,9 @@
     <MESSAGE value="Refactoring microservices customer, fraud, notification for getting new feign client properties" />
     <MESSAGE value="Created application-kube.yml k8s property file for microservices customer, fraud, notification microservices" />
     <MESSAGE value="Created deployment.yml, service.yml for customer microservice" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created deployment.yml, service.yml for customer microservice" />
+    <MESSAGE value="Created deployment.yml, service.yml for fraud microservice" />
+    <MESSAGE value="Created deployment.yml, service.yml for notification microservice" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created deployment.yml, service.yml for notification microservice" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
